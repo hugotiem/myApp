@@ -19,6 +19,8 @@
 		219E62E027D2B2CF0086C6AC /* MyApp2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E62DF27D2B2CF0086C6AC /* MyApp2UITests.swift */; };
 		219E62E227D2B2CF0086C6AC /* MyApp2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E62E127D2B2CF0086C6AC /* MyApp2UITestsLaunchTests.swift */; };
 		219E62F127D2B5B80086C6AC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E62F027D2B5B80086C6AC /* CategoryViewController.swift */; };
+		4361F1CF27D6A91F007B8549 /* MyFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4361F1CC27D6A8EE007B8549 /* MyFood.framework */; };
+		4361F1D027D6A91F007B8549 /* MyFood.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4361F1CC27D6A8EE007B8549 /* MyFood.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A14EE88A27D3828E00A840D6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14EE88927D3828E00A840D6 /* SearchViewController.swift */; };
 		A14EE89027D3908700A840D6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14EE88F27D3908700A840D6 /* TableViewCell.swift */; };
 		A14EE89227D3C13600A840D6 /* DetailRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14EE89127D3C13600A840D6 /* DetailRestaurantViewController.swift */; };
@@ -43,7 +45,35 @@
 			remoteGlobalIDString = 219E62B727D2B2CE0086C6AC;
 			remoteInfo = MyApp2;
 		};
+		4361F1CB27D6A8EE007B8549 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4361F1C627D6A8EE007B8549 /* MyFood.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43FD933A27D3CBF200C15587;
+			remoteInfo = MyFood;
+		};
+		4361F1CD27D6A8EE007B8549 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4361F1C627D6A8EE007B8549 /* MyFood.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43FD934427D3CBF200C15587;
+			remoteInfo = MyFoodTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4361F1C427D6A83B007B8549 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4361F1D027D6A91F007B8549 /* MyFood.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		217B63F627D37B2D000EF1F9 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
@@ -62,6 +92,7 @@
 		219E62DF27D2B2CF0086C6AC /* MyApp2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp2UITests.swift; sourceTree = "<group>"; };
 		219E62E127D2B2CF0086C6AC /* MyApp2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		219E62F027D2B5B80086C6AC /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		4361F1C627D6A8EE007B8549 /* MyFood.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyFood.xcodeproj; path = "--force/MyFood.xcodeproj"; sourceTree = "<group>"; };
 		A14EE88927D3828E00A840D6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A14EE88F27D3908700A840D6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A14EE89127D3C13600A840D6 /* DetailRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRestaurantViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4361F1CF27D6A91F007B8549 /* MyFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,11 +142,12 @@
 		219E62AF27D2B2CE0086C6AC = {
 			isa = PBXGroup;
 			children = (
-				4361F1AA27D6A317007B8549 /* Submodules */,
+				4361F1C527D6A8B5007B8549 /* Submodules */,
 				219E62BA27D2B2CE0086C6AC /* MyApp2 */,
 				219E62D427D2B2CF0086C6AC /* MyApp2Tests */,
 				219E62DE27D2B2CF0086C6AC /* MyApp2UITests */,
 				219E62B927D2B2CE0086C6AC /* Products */,
+				4361F1C127D6A83B007B8549 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,11 +199,28 @@
 			path = MyApp2UITests;
 			sourceTree = "<group>";
 		};
-		4361F1AA27D6A317007B8549 /* Submodules */ = {
+		4361F1C127D6A83B007B8549 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4361F1C527D6A8B5007B8549 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				4361F1C627D6A8EE007B8549 /* MyFood.xcodeproj */,
+			);
 			path = Submodules;
+			sourceTree = "<group>";
+		};
+		4361F1C727D6A8EE007B8549 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4361F1CC27D6A8EE007B8549 /* MyFood.framework */,
+				4361F1CE27D6A8EE007B8549 /* MyFoodTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +233,7 @@
 				219E62B427D2B2CE0086C6AC /* Sources */,
 				219E62B527D2B2CE0086C6AC /* Frameworks */,
 				219E62B627D2B2CE0086C6AC /* Resources */,
+				4361F1C427D6A83B007B8549 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +314,12 @@
 			mainGroup = 219E62AF27D2B2CE0086C6AC;
 			productRefGroup = 219E62B927D2B2CE0086C6AC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4361F1C727D6A8EE007B8549 /* Products */;
+					ProjectRef = 4361F1C627D6A8EE007B8549 /* MyFood.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				219E62B727D2B2CE0086C6AC /* MyApp2 */,
@@ -271,6 +328,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4361F1CC27D6A8EE007B8549 /* MyFood.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyFood.framework;
+			remoteRef = 4361F1CB27D6A8EE007B8549 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4361F1CE27D6A8EE007B8549 /* MyFoodTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyFoodTests.xctest;
+			remoteRef = 4361F1CD27D6A8EE007B8549 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		219E62B627D2B2CE0086C6AC /* Resources */ = {

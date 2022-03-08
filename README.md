@@ -5,7 +5,7 @@ MyAppFramework/MyAppFood
 
 MyAppFramework
 
-
+\n
 Ce framework permet de récupérer, rechercher et sauvegarder des listes de restaurants en fonctions de mots clés comme le lieux (villes, rue etc…), des tags (japonais, italien etc…), des noms etc….  
 
 
